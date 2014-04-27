@@ -1,6 +1,8 @@
 {
   "name": "zaprewards",
   "version": "0.0.0",
+  "description": "This example app is so cool.",
+  "main": "web.js",
   "dependencies": {
     "gzippo": "~0.2.0",
     "express": "~4.1.0",

@@ -11,5 +11,5 @@ app.use(bodyParser()); 						// pull information from html in POST
 app.use(methodOverride()); 					// simulate DELETE and PUT
 
 //app.use(express.logger('dev'));
-app.use(gzippo.staticGzip("" + __dirname + "/dist"));
+app.use(gzippo.staticGzip("" + __dirname + "/public"));
 app.listen(process.env.PORT || 5000);
