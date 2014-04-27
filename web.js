@@ -10,6 +10,9 @@ app.use(morgan('dev')); 					// log every request to the console
 app.use(bodyParser()); 						// pull information from html in POST
 app.use(methodOverride()); 					// simulate DELETE and PUT
 
+app.get('/', function(request, response) {
+  response.send('views/main.html');
+});
 //app.use(express.logger('dev'));
 app.use(gzippo.staticGzip("" + __dirname + "/public"));
 app.listen(process.env.PORT || 5000);
